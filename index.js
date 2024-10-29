@@ -37,3 +37,30 @@ function checkLength(length){
 }
 
 checkLength(168);
+
+// Exempel på loop
+
+// for (startvärde, villkor, öka värde efter kod körs)
+for(let x=0;x<5;x++){
+    console.log("Loopen körs!", x);
+}
+
+//En array som vi kan kolla längden på
+let foods = ["Kebab","Potatissallad", "Hamburgare", "Tacos"];
+// console.log(foods.length);
+
+// En loop som itererar igenom vår array
+
+for(let x=0; x<foods.length; x++ ){
+
+    console.log(foods[x]);
+
+    // Exempel på if/else-statement i en loop
+    // if(foods[x] === "Hamburgare"){
+    //     console.log("Mums min favoriträtt!", foods[x])
+    // } else {
+    //     console.log("Usch, jag vill ha hamburgare")
+    // }
+}
+
+console.log("Loopen är nu färdig!");
