@@ -17,9 +17,6 @@ function createArray(a,b,c){
 }
 
 let fruits = createArray("Banan","Äpple","Mango");
+
 console.log(fruits);
 console.log(addNumbers("6",14));
-
-
-
-// Exempel på loop
