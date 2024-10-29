@@ -52,14 +52,14 @@ function addOne(num) {
   
   //Uppgift 6
   
-  const getFirstElement = (arr) => {
+  function getFirstElement(arr){
     return arr[0];
   };
 
 //   console.log(getFirstElement([7, 4, 10, 526236262]));
   
-  //Uppgift 7 - Exempel på en arrow function
-  const getGameScore = (twoPointers, threePointers) => {
+  //Uppgift 7
+  function getGameScore(twoPointers, threePointers){
 
     let twoPointersTotal = twoPointers * 2;
     let threePointersTotal = threePointers * 3;
@@ -71,7 +71,7 @@ function addOne(num) {
   
   //Uppgift 8
   
-  const countLegs = (chickens, cows, pigs) => {
+  function countLegs (chickens, cows, pigs){
     let chickenLegs = chickens * 2;
     let cowLegs = cows * 4;
     let pigLegs = pigs * 4;
@@ -85,20 +85,20 @@ function addOne(num) {
   //Lösning 1
 
 
-//   let isEven = (num) => {
-//     if (num % 2 === 0) {
-//       return true;
-//     } else {
-//       return false;
-//     }
-//   };
+  function isEven(num) {
+    if (num % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
 
 
 
   //Lösning 2
   
-  let isEven = (num) => {
+  function isEven(num){
     return num % 2 === 0;
   };
     
@@ -106,7 +106,7 @@ function addOne(num) {
   
   //Uppgift 10
   
-  let isLessThan0 = (num) => {
+  function isLessThan0(num){
     
     return num <= 0;
 
@@ -120,7 +120,7 @@ function addOne(num) {
   //Uppgift 11
   
   function isLessThan100 (num1, num2) {
-
+    //Alternativ 1
     let total = num1 +num2;
 
     if(total < 100){
@@ -128,7 +128,8 @@ function addOne(num) {
     } else {
         return false
     }
-
+    //Alternativ 2
+    
     // return num1 + num2 < 100;
   };
   
