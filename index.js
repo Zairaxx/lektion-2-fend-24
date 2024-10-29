@@ -20,3 +20,20 @@ let fruits = createArray("Banan","Äpple","Mango");
 
 console.log(fruits);
 console.log(addNumbers("6",14));
+
+// If /else if/ else
+
+
+function checkLength(length){
+    if(length === 177){
+        console.log("Du är exakt 177cm lång!");
+    } else if(length > 195) {
+        console.log("You're a giant amongst ants!")
+    } else if (length < 195 && length > 145) {
+        console.log("Du är förmodligen normallång!");
+    } else {
+        console.log("Du är nog kortare än genomsnittet!")
+    }
+}
+
+checkLength(168);
