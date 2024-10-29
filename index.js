@@ -1,22 +1,136 @@
-//Functions
+//Uppgift 1
 
-function multiplyBy3(num){
-    let value = num * 3;
-    return value
-}
+function addOne(num) {
+    // let result = num + 1;
+    // return result;
+  
+    return num + 1;
+  }
+  
+  // console.log(addOne(5));
+  
+  //Uppgift 2
+  
+  function convertToSec(hour) {
+    
+    let minutes = hour * 60;
+    let seconds = minutes * 60;
+    return seconds;
+  
+    // return hour 3600;
+  }
+  
+  // console.log(convertToSec(2));
+  // console.log(convertToSec(10));
+  // console.log(convertToSec(15));
+  // console.log(convertToSec(24));
+  
+  //Uppgift 3
+  
+  function convertAgeToDays(age) {
+    return age * 365.25; //inklusive skottår
+  }
+  
+//   console.log(convertAgeToDays(30));
+  
+  //Uppgift 4
+  
+  function getArea(base, height) {
+    let area = (base * height) / 2;
+    return area;
+  }
+  
+  //Uppgift 5
+  
+  function convertDaysToMinutes(days) {
 
-console.log(multiplyBy3(10));
+    let hours = days * 24;
+    let minutes = hours * 60;
 
-function addNumbers(a,b){
-    let answer = a+b;
-    return answer;
-}
+    return minutes;
+  }
+  
+  //Uppgift 6
+  
+  const getFirstElement = (arr) => {
+    return arr[0];
+  };
 
-function createArray(a,b,c){
-    return [a,b,c]
-}
+//   console.log(getFirstElement([7, 4, 10, 526236262]));
+  
+  //Uppgift 7 - Exempel på en arrow function
+  const getGameScore = (twoPointers, threePointers) => {
 
-let fruits = createArray("Banan","Äpple","Mango");
+    let twoPointersTotal = twoPointers * 2;
+    let threePointersTotal = threePointers * 3;
 
-console.log(fruits);
-console.log(addNumbers("6",14));
+    return twoPointersTotal + threePointersTotal;
+  };
+  
+  // console.log(getGameScore(10, 6));
+  
+  //Uppgift 8
+  
+  const countLegs = (chickens, cows, pigs) => {
+    let chickenLegs = chickens * 2;
+    let cowLegs = cows * 4;
+    let pigLegs = pigs * 4;
+  
+    let total = chickenLegs + cowLegs + pigLegs;
+    return total;
+  };
+  
+  //Uppgift 9
+  
+  //Lösning 1
+
+
+//   let isEven = (num) => {
+//     if (num % 2 === 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   };
+
+
+
+
+  //Lösning 2
+  
+  let isEven = (num) => {
+    return num % 2 === 0;
+  };
+    
+  console.log(isEven(4));
+  
+  //Uppgift 10
+  
+  let isLessThan0 = (num) => {
+    
+    return num <= 0;
+
+    // if(num <=0){
+    //     return true
+    // } else {
+    //     return false
+    // }
+  };
+  
+  //Uppgift 11
+  
+  function isLessThan100 (num1, num2) {
+
+    let total = num1 +num2;
+
+    if(total < 100){
+        return true
+    } else {
+        return false
+    }
+
+    // return num1 + num2 < 100;
+  };
+  
+  console.log(isLessThan100(49, 50));
+  
